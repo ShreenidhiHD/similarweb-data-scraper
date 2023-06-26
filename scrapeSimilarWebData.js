@@ -4,7 +4,7 @@ puppeteer.use(StealthPlugin());
 
 async function scrapeSimilarWebData(url) {
   const browser = await puppeteer.launch({
-    headless: true,
+    headless: "new",
   });
   const page = await browser.newPage();
   await page.setViewport({ width: 1280, height: 800 });
